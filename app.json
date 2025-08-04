@@ -1,0 +1,57 @@
+{
+  "expo": {
+    "name": "화산족보",
+    "slug": "hwasanjokbo-app",
+    "version": "2.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#000000"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.hwasanjokbo.app",
+      "buildNumber": "6",
+      "infoPlist": {
+        "NSCameraUsageDescription": "족보 사진을 촬영하기 위해 카메라 접근 권한이 필요합니다.",
+        "NSPhotoLibraryUsageDescription": "족보 파일을 선택하기 위해 사진 라이브러리 접근 권한이 필요합니다.",
+        "NSDocumentsFolderUsageDescription": "족보 파일을 저장하기 위해 문서 폴더 접근 권한이 필요합니다.",
+        "ITSAppUsesNonExemptEncryption": false
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#000000"
+      },
+      "package": "com.hwasanjokbo.app",
+      "versionCode": 6,
+      "permissions": [
+        "android.permission.CAMERA",
+        "android.permission.READ_EXTERNAL_STORAGE",
+        "android.permission.WRITE_EXTERNAL_STORAGE",
+        "android.permission.RECORD_AUDIO"
+      ]
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      "expo-image-picker",
+      "expo-document-picker",
+      "expo-asset"
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "24a53b50-853e-44ed-9729-876f1e932d05"
+      }
+    },
+    "owner": "eurochoic"
+  }
+}
